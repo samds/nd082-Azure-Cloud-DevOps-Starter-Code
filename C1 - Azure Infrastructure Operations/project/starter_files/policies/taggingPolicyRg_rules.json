@@ -12,12 +12,8 @@
             "exists": "false"
           },
           {
-            "field": "tags['']",
-            "exists": "true"
-          },
-          {
-            "field": "tags['None']",
-            "exists": "true"
+            "value": "[length(field('tags'))]",
+            "equals": 0
           },
           {
             "field": "tags",
@@ -29,11 +25,15 @@
           },
           {
             "value": "[length(field('tags'))]",
-            "equals": 0
+            "equals": ""
           },
           {
-            "value": "[length(field('tags'))]",
-            "equals": ""
+            "field": "tags['']",
+            "exists": "true"
+          },
+          {
+            "field": "tags['None']",
+            "exists": "true"
           }
         ]
       }
