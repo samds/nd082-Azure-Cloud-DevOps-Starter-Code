@@ -12,6 +12,14 @@
             "exists": "false"
           },
           {
+            "field": "tags['']",
+            "exists": "true"
+          },
+          {
+            "field": "tags['None']",
+            "exists": "true"
+          },
+          {
             "field": "tags",
             "equals": ""
           },
